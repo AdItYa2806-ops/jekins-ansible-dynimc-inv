@@ -14,7 +14,7 @@ keyed_groups:
     prefix: ""
     separator: "" 
 
-host_names:
+hostnames:
   - private-ip-address
 
 compose:
