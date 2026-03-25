@@ -1,4 +1,4 @@
-plugin: aws_ec2
+plugin: amazon.aws.aws_ec2
 
 #aws_access_key: 
 #aws_secret_key: 
@@ -7,14 +7,14 @@ regions:
   - ap-south-1
 
 filters:
-  instance-state-name : running
- 
-keyed_groups:
+  instance-state-name: running
+
+keyed_groups: 
   - key: tags.Name
     prefix: ""
-    separator: ""
+    separator: "" 
 
-hostnames:
+host_names:
   - private-ip-address
 
 compose:
